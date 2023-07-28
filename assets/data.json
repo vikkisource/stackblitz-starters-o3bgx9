@@ -1,0 +1,41 @@
+[
+{
+            "qid":1,
+        "questionname":"HTML Stands For?",
+        "answer":[
+               {"option":"Hypertext Markup Language","isoption":true},
+               {"option":"Hightype Makeing Language","isoption":false},
+               {"option":"High transfer mailing","isoption":false}
+        ]
+    },
+    {
+    "qid":2,
+    "questionname":"which type render it?",
+    "answer":[
+           {"option":"Web browser","isoption":true},
+           {"option":"web server","isoption":false},
+           {"option":"others","isoption":false}
+    ]
+},
+{
+       "qid":3,
+       "questionname":"Choose the correct HTML element for the largest heading:",
+       "answer":[
+              {"option":"<h1>","isoption":true},
+           {"option":"<h6>","isoption":false},
+           {"option":"<heading>","isoption":false}
+       ]
+},
+{
+       "qid":4,
+       "questionname":"What is the correct HTML element for inserting a line break?",
+       "answer":[
+              {"option":"<break>","isoption":false},
+           {"option":"<lb>","isoption":false},
+           {"option":"<br>","isoption":true}
+       ]
+}
+
+
+    
+]

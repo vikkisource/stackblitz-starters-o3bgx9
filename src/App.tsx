@@ -1,11 +1,21 @@
 import * as React from 'react';
-import './style.css';
+import * as ReactDOM from 'react-dom/client';
+import './App.css';
+import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
+import Login from './login';
+import Quiz from './quiz';
+import Otpcheck from './otpcheck';
 
-export default function App() {
+import Quiz1 from './quiz1';
+
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Login title="Quiz App" />}></Route>
+      </Routes>
     </div>
   );
 }
+
+export default App;
