@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: PoppinsRegular;
+}
+:root {
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url('assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url('assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url('assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+body {
+  background-color: aliceblue;
+}
+
+/* Login style */
+.loginContainer {
+  background-color: #fff;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quizimg {
+  width: 350px;
+  height: 250px;
+}
+.leftSide {
+  min-width: 400px;
+}
+.loginContainer .leftSide {
+  padding: 15px;
+}
+.appTitle {
+  font-family: PoppinsMedium;
+  margin-bottom: 10px;
+}
+.formField label {
+  display: block;
+}
+.formField {
+  margin-bottom: 20px;
+}
+.formField select {
+  width: 100%;
+  padding: 5px;
+}
+input.formControl {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+.loginForm .formControl {
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  font-family: PoppinsMedium;
+}
+.loginForm input[type='submit'],
+input[type='submit'] {
+  padding: 8px;
+  background: #e8b601;
+  border-radius: 2px;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+}
+.loginForm input[type='submit']:hover,
+input[type='submit']:hover {
+  background-color: #b89108;
+}
+
+/* Quiz page style */
+
+.quizContainer {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 800px;
+
+  margin: 20px auto;
+  padding: 10px;
+}
+.quizForm {
+  padding: 10px;
+}
+.quizForm .questionBlock {
+  margin: 5px 0px;
+  padding: 10px;
+}
+.quizTitle {
+  text-align: center;
+  font-family: PoppinsBold;
+  padding: 10px;
+}
+
+.quistionname {
+  font-size: 18px;
+  font-family: PoppinsMedium;
+  padding-bottom: 10px;
+}
+.answerOption li {
+  display: flex;
+  gap: 8px;
+
+  margin: 10px;
+}
+.answerOption li label {
+  font-family: PoppinsRegular;
+  font-size: 14px;
+}
+.otpBox {
+  padding: 20px;
+}
+.answerlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.answerlist li {
+  padding: 5px 8px;
+  border: 1px solid #efefef;
+}
+.answerlist li.selected-answer {
+  background-color: #e8b6018e;
+}
+.btnnext {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #b89108;
+  background-color: #b89108;
+  color: #fff;
+  margin: 10px 0px;
+}
+.btnGroup {
+  text-align: center;
+}
+.scoretag {
+  text-align: center;
+  font-size: 30px;
+}
+.btnHome {
+  outline: none;
+  border: 1px solid;
+  background-color: #e8b601;
+  border-color: #e8b601;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.btnnext:disabled {
+  opacity: 0.5;
+}
+
+/* //score table style */
+.scoreTable {
+  width: 80%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+.scoreTable td {
+  border: 1px solid #80808026;
+  padding: 5px;
+}
+.scoreTable td:nth-child(1) {
+  background-color: #e8b60117;
+}
+.scoreTable td:nth-child(2) {
+  text-align: center;
+}
+.scoreTable tr:nth-child(1) td {
+  background-color: #b89108;
+}
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .rightSide {
+    display: none;
+  }
+  .leftSide,
+  .quizContainer {
+    min-width: 95%;
+    width: 95%;
+  }
+  .loginContainer {
+    width: 90%;
+  }
+  .quizTitle {
+    font-size: 14px;
+  }
+  .formField input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .questionName {
+    font-size: 16px;
+  }
+  .answerOption li label {
+    font-size: 12px;
+  }
+  .loginContainer {
+    width: 90%;
+  }
+}
