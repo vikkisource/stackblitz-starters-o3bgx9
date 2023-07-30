@@ -13,6 +13,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Login title="Quiz App" />}></Route>
+     
+        <Route path='/otp' element={<Otpcheck  />} />
+        
+        <Route path='quiz' element={<Quiz />} />
+        <Route path='quiz1' element={<Quiz1 />} />
       </Routes>
     </div>
   );
