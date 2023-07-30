@@ -42,7 +42,7 @@ function Login(props) {
 
     localStorage.setItem('otp', otp);
     localStorage.setItem('isstatus', 'otp');
-    //  sendEmail();
+      sendEmail();
     navigate('/otp');
   };
 
